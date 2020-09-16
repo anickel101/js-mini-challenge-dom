@@ -26,7 +26,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-Added an event listener for DOMContenLoaded. If the script is called before the header is actually described, than "const header =" will point to null.
+Moved the js script calls to the end of the document. Therefore, there actually exists a "header".
 ```
 
 ## Deliverable 2
