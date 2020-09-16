@@ -26,7 +26,7 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+Added an event listener for DOMContenLoaded. If the script is called before the header is actually described, than "const header =" will point to null.
 ```
 
 ## Deliverable 2
@@ -35,7 +35,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
-
+Update the style.color of the header variable (const header = document.querySelector("#header");)
 ```
 
 ## Deliverable 3
@@ -57,6 +57,15 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
+PLAYERS const is declared in first js script and thus that constant is available subsequently. 
+
+So, for each player of PLAYERS, we need to:
+1. create a div and assign the appropriate information
+  a. div.class = 
+  b. div.dataset.number = 
+2. create some HTML used to show player information
+3. assign the newly created HTML to the div.innerHTML
+4. append the div to the container (in this case, player-container div)
 
 ```
 
@@ -68,5 +77,6 @@ Hint: You can use `querySelector` with [CSS Attribute Selectors](https://develop
 
 **YOUR NOTES**
 ```
-
+Had some issue with the syntax (also with the "" or '').
+document.querySelector("[data-number='7']") to get raz. raz.remove() to remove the element.
 ```
